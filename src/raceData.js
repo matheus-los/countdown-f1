@@ -1,29 +1,9 @@
-import mexImage from './components/GpInfo/Mexican-Grand-Prix-1.png';
 import brImage from './components/GpInfo/interlagos.jpg';
 import euaImage from './components/GpInfo/lasvegas-gp.jpg';
+import qatarImage from './components/GpInfo/lusail.jpg';
+import abuImage from './components/GpInfo/yas-marina.jpg';
 
 export const RACE_DATA = [
-    {
-        id: 'mex',
-        name: 'GP do México',
-        raceDate: '2025-10-26T17:00:00',
-        info: {
-            title: 'Sobre o Grand Prix do México',
-            image: mexImage,
-            text: 'O GP do México é a etapa de maior altitude no calendário atual da Fórmula 1, localizado a 2.240 metros acima do nível do mar. Essa altitude tem um impacto significativo no desempenho dos carros, afetando tanto a aerodinâmica como a mecânica, e até mesmo o desempenho dos pilotos.',
-        },
-        schedule: {
-            isSprintWeekend: false,
-            sessions: [
-                {name: 'TL1', datetime: '24/10 - 15:30'},
-                {name: 'TL2', datetime: '24/10 - 19:00'},
-                {name: 'TL3', datetime: '25/10 - 14:30'},
-                {name: 'Qualifying', datetime: '25/10 - 18:00'},
-                {name: 'Corrida', datetime: '26/10 - 17:00'},
-            ]
-        }
-    },
-    
     {
         id: 'bra',
         name: 'GP do Brasil',
@@ -47,12 +27,12 @@ export const RACE_DATA = [
 
     {
         id: 'eua',
-        name: 'GP de Los Angeles',
+        name: 'GP de Las Vegas',
         raceDate: '2025-11-23T01:00:00',
         info: {
             title: 'Sobre o Grand Prix de Las Vegas',
             image: euaImage,
-            text: '',
+            text: 'O GP de Las Vegas se destaca pela pista de 6,12 km que percorre a famosa Las Vegas Strip, a corrida noturna que aproveita as luzes da cidade, e o grande espetáculo que envolve shows e festas.',
         },
         schedule: {
             isSprintWeekend: false,
@@ -62,6 +42,48 @@ export const RACE_DATA = [
                 {name: 'TL3', datetime: '21/11 - 21:30'},
                 {name: 'Qualifying', datetime: '22/11 - 01:00'},
                 {name: 'Corrida', datetime: '23/11 - 01:00'},
+            ]
+        }
+    },
+
+    {
+        id: 'qta',
+        name: 'GP do Qatar',
+        raceDate: '2025-11-30T13:00:00',
+        info: {
+            title: 'Sobre o Grand Prix do Qatar',
+            image: qatarImage,
+            text: 'O GP do Catar é conhecido por ser uma pista tecnicamente desafiadora, projetada originalmente para a MotoGP, o que a torna mais estreita que outras pistas modernas de F1. O Circuito Internacional de Lusail, que fica perto de Doha, também apresenta uma reta principal longa que favorece ultrapassagens e é famoso pela gestão de pneus devido ao asfalto abrasivo, exigindo estratégia dos pilotos. Além disso, o GP foi introduzido na F1 em 2021 e o país assinou um acordo de longo prazo para sediar o evento a partir de 2023.',
+        },
+        schedule: {
+            isSprintWeekend: true,
+            sessions: [
+                {name: 'TL1', datetime: '28/11 - 10:30'},
+                {name: 'Sprint Shootout', datetime: '28/11 - 14:30'},
+                {name: 'Corrida Sprint', datetime: '29/11 - 11:00'},
+                {name: 'Qualifying', datetime: '29/11 - 15:00'},
+                {name: 'Corrida', datetime: '30/11 - 13:00'},
+            ]
+        }
+    },
+
+    {
+        id: 'abu',
+        name: 'GP de Abu Dhabi',
+        raceDate: '2025-12-07T10:00:00',
+        info: {
+            title: 'Sobre o Grand Prix de Abu Dhabi',
+            image: abuImage,
+            text: 'O GP de Abu Dhabi é famoso por seu circuito moderno no Yas Marina, que possui um design único com um túnel no pit lane e o Hotel Yas, além de ser a única corrida atual nomeada apenas pela cidade. A corrida de 2009 foi a primeira da F1 a começar de dia e terminar à noite, e a corrida de 2021 é lembrada pela polêmica decisão que decidiu o campeonato de forma dramática. ',
+        },
+        schedule: {
+            isSprintWeekend: false,
+            sessions: [
+                {name: 'TL1', datetime: '05/12 - 06:30'},
+                {name: 'TL2', datetime: '05/12 - 10:00'},
+                {name: 'TL3', datetime: '06/12 - 07:30'},
+                {name: 'Qualifying', datetime: '06/12 - 11:00'},
+                {name: 'Corrida', datetime: '07/12 - 10:00'},
             ]
         }
     },

@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Michroma', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .main-container {
     height: 100vh;
     overflow-y: scroll;
@@ -9,7 +20,7 @@
 
 .secao-da-pagina {
     height: 100vh;
-    scroll-snap-align: start;
+    scroll-snap-align: none;
     display: flex;
     justify-content: center;
     align-items: center;

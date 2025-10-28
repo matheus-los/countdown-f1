@@ -1,58 +1,68 @@
-.standing-container {   
-    width: 90%;
-    max-width: 800px;
-    margin: 20px;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-height: 75vh;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+.standing-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px;
+  padding: 30px;
+  /* Mapeado para 'Fundo de cards / boxes' */
+  background-color: #1E1E1E;
+  /* Mapeado para 'Texto principal' (definindo a cor padrão do texto) */
+  color: #E0E0E0;
+  border-radius: 12px;
+  /* Remove a sombra clara e adiciona uma borda sutil */
+  box-shadow: none;
+  border: 1px solid rgba(192, 192, 192, 0.2); /* Baseado em 'Bordas / Detalhes' */
+  max-height: 75vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .standing-container h2 {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 25px;
-    color: #1a1a1a;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  /* Mapeado para 'Títulos / Destaques' */
+  color: #FF1801;
 }
 
 .standing-table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .standing-table th,
 .standing-table td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #e0e0e0;
+  padding: 15px;
+  text-align: left;
+  /* Linha divisória sutil, usando a cor 'Bordas' transparente */
+  border-bottom: 1px solid rgba(192, 192, 192, 0.15);
 }
 
 .standing-table th {
-    background-color: #f9f9f9;
-    font-weight: 400;
-    color: #555;
+  /* Mapeado para 'Fundo principal' (para o cabeçalho) */
+  background-color: #0D0D0D;
+  font-weight: 400;
+  /* Mapeado para 'Texto principal' */
+  color: #E0E0E0;
 }
 
 .standing-table th:first-child,
 .standing-table td:first-child,
 .standing-table th:last-child,
 .standing-table td:last-child {
-    text-align: center;
+  text-align: center;
 }
 
 .standing-table tbody tr:nth-child(even) {
-    background-color: #fdfdfd;
+  /* Efeito "zebra" usando o 'Fundo principal' */
+  background-color: #0D0D0D;
 }
 
 .standing-table tbody tr:hover {
-    background-color: #f0f8ff;
+  /* Efeito de hover usando a cor de 'Destaque' transparente */
+  background-color: rgba(255, 24, 1, 0.1);
 }
 
 .standing-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
