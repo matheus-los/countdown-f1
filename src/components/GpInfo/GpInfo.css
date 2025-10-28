@@ -1,0 +1,46 @@
+.info-container {
+  width: 75%;
+  max-width: 800px; /* Define uma largura máxima */
+  padding: 30px;
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra igual à da tabela */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+
+  /* --- A MÁGICA ACONTECE AQUI --- */
+  
+  /* 1. Garantir que o card não seja mais alto que a tela */
+  max-height: 90vh; /* No máximo 90% da altura da tela */
+  
+  /* 2. Se o texto for muito longo, o *card* ganha uma barra de rolagem */
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.info-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.info-text p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.gp-info-img {
+  width: 100%;
+  max-height: 40vh;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.info-container::-webkit-scrollbar {
+  display: none;
+}

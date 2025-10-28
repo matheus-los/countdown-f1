@@ -1,0 +1,73 @@
+.countdown-container {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FF1801;
+}
+
+.countdown-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-block {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time-block span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.time-block p {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.countdown-schedule {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: #E0E0E0;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.schedule-table th {
+    background-color: #1E1E1E;
+    font-weight: 400;
+    color: #E0E0E0;
+}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child,
+.schedule-table th:last-child,
+.schedule-table td:last-child {
+    text-align: center;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+

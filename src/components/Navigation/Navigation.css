@@ -1,0 +1,40 @@
+.race-navigation {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+  position: sticky; /* Faz o menu grudar no topo */
+  top: 0;
+}
+
+.race-navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.race-navigation button {
+  background-color: transparent;
+  border: none;
+  color: #a0a0a0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.race-navigation button:hover {
+  color: #ffffff;
+}
+
+/* Estilo do botão ativo */
+.race-navigation button.active {
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom: 3px solid #e10600; /* Vermelho F1 */
+}
