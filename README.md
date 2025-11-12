@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🏎️ CountDown F1
+Um dashboard interativo para fãs de Fórmula 1, focado em praticar conceitos fundamentais do React. Chega de ficar caçando o horário do TL3 em 10 sites diferentes: aqui você seleciona o Grande Prêmio e a página atualiza dinamicamente o contador, a agenda do fim de semana e as informações do circuito.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ✨ Funcionalidades Principais
+Navegação Dinâmica: Selecione o GP na barra de navegação e veja todo o conteúdo da página ser atualizado instantaneamente.
 
-## Available Scripts
+Contador Regressivo: Cronômetro em tempo real para a próxima sessão de corrida.
 
-In the project directory, you can run:
+Agenda do Fim de Semana: Tabela dinâmica que mostra os horários de todas as sessões (TL1, TL2, TL3, Quali, Corrida) e se ajusta automaticamente para fins de semana com Corrida Sprint.
 
-### `npm start`
+Informações do Circuito: Um card com uma imagem e curiosidades sobre a pista selecionada.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Resultados da Corrida: Tabela com o pódio ou os resultados da corrida correspondente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+UI com "Scroll Snap": A interface é dividida em seções de tela cheia, criando uma experiência de navegação fluida e moderna.
 
-### `npm test`
+Tema Escuro: Estilizado com uma paleta de cores escura e personalizada, usando fontes do Google Fonts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 📚 O que eu pratiquei neste projeto?
+Este projeto foi um campo de treinamento para solidificar conceitos-chave do React e do desenvolvimento frontend moderno:
 
-### `npm run build`
+Gerenciamento de Estado (useState): Usado para controlar qual corrida está selecionada no momento.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Efeitos Colaterais (useEffect): Essencial para fazer o contador regressivo funcionar, atualizando o estado a cada segundo com um setInterval.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Elevação de Estado (Lifting State Up): A lógica principal de qual corrida está selecionada vive no componente App.js (o "cérebro") e é distribuída para os componentes "filhos" (Countdown, GpInfo, etc.) via props.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Renderização de Listas (.map()): Usado para criar dinamicamente a barra de navegação e as tabelas de agenda e resultados a partir de um array de dados.
 
-### `npm run eject`
+Renderização Condicional: A "Agenda do Fim de Semana" exibe colunas diferentes (ex: "Sprint Shootout") se um booleano isSprintWeekend for verdadeiro.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Componentização e Props: Divisão da UI em componentes reutilizáveis (Navigation, Countdown, GpInfo, StandingsTable), cada um recebendo seus dados via props.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Estilização com CSS:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Criação de um tema escuro customizado.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Uso de scroll-snap-type para o layout de tela cheia.
 
-## Learn More
+Esconder barras de rolagem visualmente.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Carregamento de fontes customizadas (@import do Google Fonts).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Uso de Flexbox para centralização e layout.
 
-### Code Splitting
+# 🚀 Como Rodar o Projeto Localmente
+Para clonar e rodar esta aplicação no seu computador, você precisará do Node.js (que já inclui o npm).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Bash
 
-### Analyzing the Bundle Size
+## 1. Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 2. Entre na pasta do projeto
+cd seu-repositorio
 
-### Making a Progressive Web App
+## 3. Instale as dependências
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 4. Inicie o servidor de desenvolvimento
+npm start
+Abra http://localhost:3000 no seu navegador para ver o projeto rodando.
 
-### Advanced Configuration
+# 🔮 Próximos Passos (Melhorias Futuras)
+O próximo grande passo é transformar este projeto de um mockup para uma aplicação 100% real:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[ ] Consumir uma API Real: Substituir o "banco de dados" (raceData.js) por chamadas a uma API de F1 (como a Ergast API) para obter dados reais e atualizados.
 
-### Deployment
+[ ] Adicionar Mais Seções: Criar seções para a "Classificação de Pilotos" e "Classificação de Construtores" da temporada.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[ ] Responsividade: Melhorar o layout para funcionar perfeitamente em dispositivos móveis.
